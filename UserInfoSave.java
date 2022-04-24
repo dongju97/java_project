@@ -11,14 +11,14 @@ public class UserInfoSave {
 	public boolean save(Panel panel, UserInfoVO userInfoVO) {
 
 		String user = "";
-		user = user + userInfoVO.getId() + "/";
-		user = user + userInfoVO.getPwd() + "/";
-		user = user + userInfoVO.getName() + "/";
-		user = user + userInfoVO.getGender() + "/";
-		user = user + userInfoVO.getBirth() + "/";
-		user = user + userInfoVO.getPhone1() + "/";
-		user = user + userInfoVO.getEmail1() + "@";
-		user = user + userInfoVO.getEmail2()+"/";
+		user += userInfoVO.getId() + "/";
+		user += userInfoVO.getPwd() + "/";
+		user += userInfoVO.getName() + "/";
+		user += userInfoVO.getGender() + "/";
+		user += userInfoVO.getBirth() + "/";
+		user += userInfoVO.getPhone1() + "/";
+		user += userInfoVO.getEmail1() + "@";
+		user += userInfoVO.getEmail2()+"/";
 		user += userInfoVO.getCoupon();
 		
 
@@ -43,7 +43,7 @@ public class UserInfoSave {
 			e1.printStackTrace();
 			return false;
 		}
-		JOptionPane.showMessageDialog(panel, "ÀúÀå µÇ¾ú½À´Ï´Ù.");
+		JOptionPane.showMessageDialog(panel, "ì €ì¥ë˜ì—ˆìŠµë‹ˆë‹¤");
 		return true;
 	}
 
